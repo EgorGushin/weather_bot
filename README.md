@@ -13,4 +13,4 @@
     git clone https://github.com/EgorGushin/weather_bot.git
 
 ## *Запуск бота:*
-### python3 bot_weather.py
+    python3 bot_weather.py
