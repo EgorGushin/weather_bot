@@ -1,7 +1,10 @@
 import requests
 
-URL = 'http://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&APPID=7544d6bd11364e137f04555da356d101&units=metric&lang=ru'
+
+API = 'Your API key on openweathermap.org'
+
 
 def weather_cheсk(lat, lon):
-    response = requests.get(URL.format(lat, lon))
+    URL = f'http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&APPID={API}&units=metric&lang=ru'
+    response = requests.get(URL)
     return response.json()
